@@ -1,0 +1,131 @@
+.bigScreen{
+  color:white;
+  width:100%;
+  height:100%;
+  overflow-y: auto;
+}
+.header{
+  position: relative;
+  width:100%;
+  height:70px;
+  background: url(../images/top.png) no-repeat;
+  background-size: 100% 100%;
+  font-size: 20px;
+}
+.header_left div{
+  margin-right:20px;
+}
+.header_right div{
+  margin-right:20px;
+}
+.select{
+  background: url(../images/sj.png) no-repeat;
+  background-size: 100% 100%;
+  font-size: 20px;
+  color:grey;
+}
+.logo{
+  color:#00fff5;
+  position: relative;
+}
+.content{
+  margin:40px;
+}
+.header_left{
+  width: 30%;
+}
+.header_right{
+  width: 30%;
+}
+.zjMain{
+  font-size: 34px;
+  width: 40%;
+  overflow: hidden;
+  text-align: center;
+}
+/* 现状分析 */
+.contentOne{
+  width: 452px;
+  height: 956px;
+  background: url(../images/bk1.png) no-repeat;
+  background-size: 100% 100%;
+  float: left;
+}
+.contentOne_header{
+  width:100%;
+  height:36px;
+  line-height: 36px;
+  text-align: center;
+}
+.contentOne_pic{
+  width:100%;
+  height:300px;
+  border:1px solid red;
+}
+/* 帮扶成效 */
+.contentTwo{
+  width: 452px;
+  height: 956px;
+  background: url(../images/bk1.png) no-repeat;
+  background-size: 100% 100%;
+  float: right;
+}
+/* 中间模块 */
+.contentThree{
+  /* height: 200px; */
+  overflow: hidden;
+  /* border: 1px solid; */
+}
+.contentThree_txt{
+  margin-left:10%;
+  height:60px;
+  line-height: 60px;
+}
+.contentThree_txt .txt_h2{
+  width:50%;
+  /* text-align: center; */
+}
+.contentThree_mount{
+  margin-left:10%;
+  position: relative;
+  height: 75px;
+}
+.num_one{
+  width:50%;
+}
+.num{
+  width:42px;
+  height:75px;
+  margin-left:1%;
+  /* position: absolute; */
+  background:url(../images/sz1.png) 0 -75px no-repeat;
+}
+.mapBox{
+  position: relative;
+}
+.map{
+  width: 100%;
+  height: 734px;
+  -moz-user-select: none;
+  position: relative;
+}
+.tabList{
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  border:1px solid #1d3a86;
+  border-radius: 10px;
+  padding-top:8px;
+}
+li{
+  width: 113px;
+  height: 27px;
+  cursor: pointer;
+  padding-left:14%;
+}
+.active{
+  width: 113px;
+  height: 27px;
+  background: url(../images/dian.png) no-repeat;
+  color: #09fffe;
+}
