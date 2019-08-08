@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>萧山区植物保护</title>
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <div class="boxPlant">
+    <!-- 头部  -->
+    <div class="header clearfix">
+      <div class="headerL fl" id="date"></div>
+      <div class="headerC fl">萧山区植物保护XXX</div>
+      <div class="headerR fl"><img src="images/weather.png" alt=""> 今日气温晴转阴温度26℃</div>
+    </div>
+    <!-- 内容部分 -->
+    <div class="content clearfix">
+      <!-- 左边 -->
+      <div class="contentL fl">
+        <div class="contentLtop clearfix">
+          <div class="echartL fl">
+            <!-- 图一 -->
+            <div class="echartLs">
+              <div class="echartLsTit">绿色防控示范基地情况</div>
+              <div class="echartLsize clearfix">
+                <div class="lineBox fl">
+                  <img class="lineBoxImg lineBoxImg1" src="images/left1.png" alt="">
+                  <span class="rice activeN" onclick="LeftBtn(1)">水稻</span>
+                  <span class="vegetables" onclick="LeftBtn(2)">蔬菜</span>
+                </div>
+                <div class="lineText fr">面积/亩</div>
+              </div>
+              <div class="echartsOne" id="echartsOne"></div>
+            </div>
+            <!-- 图二 -->
+            <div class="echartLd">
+              <div class="echartLsTit">统防统治作业队情况</div>
+              <div class="echartsTwo" id="echartsTwo"></div>
+            </div>
+          </div>
+          <div class="mapCenter fl">
+            <div class="mapS">
+              <div class="echartLsTit">绿色防控总面积</div>
+              <ul class="Mount clearfix">
+                <li>2</li>
+                <li>8</li>
+                <li>9</li>
+                <li>4</li>
+                <li>7</li>
+                <li>亩</li>
+              </ul>
+            </div>
+            <div class="mapTit clearfix">
+              <div class="mapImgTit fl"><img src="images/jcdPoint.png" alt="">监测点</div>
+              <div class="mapImgTit fl"><img src="images/sfjdPoint.png" alt="">示范基地</div>
+              <div class="mapImgTit fl"><img src="images/zbzPoint.png" alt="">植保站</div>
+            </div>
+            <div class="mapExhibition" id="mapCenter"></div>
+          </div>
+        </div>
+        <!-- 底部轮播 -->
+        <div class="contentLdown">
+          <div class="echartLsTit">绿色防控图片</div>
+          <div class="testL"><img src="images/picL.png" alt=""></div>
+          <div class="testR"><img src="images/picR.png" alt=""></div>
+          <div class="picSwiper swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/picS1.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/picS2.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/picS3.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/picS4.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/picS5.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/picS6.png" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 右边 -->
+      <div class="contentR fl">
+        <!-- 右图一 -->
+        <div class="echartLsR">
+          <div class="echartLsTit">病虫害测报情况</div>
+          <div class="echartLsize clearfix">
+            <div class="lineBoxR  fl">
+              <img class="lineBoxImg lineBoxImg2" src="images/right1.png" alt="">
+              <span class="worm worm1 activeN" onclick="LeftBtn(3)">稻飞虱</span>
+              <span class="leaf leaf1" onclick="LeftBtn(4)">卷叶螟</span>
+              <span class="illness illness1" onclick="LeftBtn(5)">纹枯病</span>
+            </div>
+            <div class="selectR">
+              <div class="StartSelect"><span class="StartSelectSpan1">定点田</span> <span> ></span></div>
+              <ul class="sUl">
+                <li class="li1" onclick="liClick(1)">定点田</li>
+                <li class="li2" onclick="liClick(2)">观察圃</li>
+                <li class="li3" onclick="liClick(3)">义桥</li>
+                <li class="li4" onclick="liClick(4)">戴村</li>
+              </ul>
+            </div>
+            
+            <!-- <div class="rightText fr">定点田 ></div> -->
+          </div>
+          <div class="echartsOne" id="RechartsOne"></div>
+        </div>
+        <!-- 右图二 -->
+        <div class="echartLsR">
+          <div class="echartLsize clearfix Rtop">
+            <div class="lineBoxR  fl">
+              <img class="lineBoxImg lineBoxImg3" src="images/right1.png" alt="">
+              <span class="worm worm2 activeN" onclick="LeftBtn(6)">稻飞虱</span>
+              <span class="leaf leaf2" onclick="LeftBtn(7)">卷叶螟</span>
+              <span class="illness illnes2" onclick="LeftBtn(8)">纹枯病</span>
+            </div>
+
+            <div class="selectR">
+              <div class="StartSelect"><span class="StartSelectSpan2">定点田</span> <span> ></span></div>
+              <ul class="sUl">
+                <li class="li5" onclick="liClick(5)">定点田</li>
+                <li class="li6" onclick="liClick(6)">观察圃</li>
+                <li class="li7" onclick="liClick(7)">义桥</li>
+                <li class="li8" onclick="liClick(8)">戴村</li>
+              </ul>
+            </div>
+            <!-- <div class="rightText fr">定点田 ></div> -->
+          </div>
+          <div class="echartsOne" id="RechartsTwo"></div>
+        </div>
+
+        <div class="echartLsR">
+          <div class="selectR">
+            <div class="StartSelect"><span class="StartSelectSpan3">定点田</span> <span> ></span></div>
+            <ul class="sUl">
+              <li class="li9" onclick="liClick(9)">定点田</li>
+              <li class="li10" onclick="liClick(10)">观察圃</li>
+              <li class="li11" onclick="liClick(11)">义桥</li>
+              <li class="li12" onclick="liClick(12)">戴村</li>
+            </ul>
+          </div>
+          <!-- <div class="ThreeQ">义桥 ></div> -->
+          <div class="RechartsThree" id="RechartsThree"></div>
+        </div>
+
+        
+
+      </div>
+    </div>
+
+
+
+  </div>
+
+  
+  <script src="js/jquery.min.js"></script>
+  <script src="js/echarts.min.js"></script>
+  <script src="js/china.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/drawMap.js"></script>
+  <script src="json/xiaoshan.json"></script>
+  <script src="js/common.js"></script>
+  <script src="js/index.js"></script>
+  
+
+  <script>
+    var mySwiper = new Swiper ('.picSwiper', {
+    loop: true, // 循环模式选项
+    autoplay:true,//等同于以下设置
+    slidesPerView: 6,
+    spaceBetween: 30,
+    slidesPerGroup: 6,
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.testL',
+      prevEl: '.testR',
+    },
+    
+  })  
+    // //模拟数据
+    var uploadedDataURL = "json/dataJson.json";
+    $.get(uploadedDataURL,function(geoJson) {
+    
+    console.log(geoJson)
+
+  },"json");
+  </script>
+</body>
+</html>
